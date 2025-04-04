@@ -14,8 +14,8 @@ export function PlayfulHeroSection() {
   const isInView = useInView(ref);
   return (
     <div ref={ref} className="mb-20 w-full">
-      <div className="mx-auto grid max-h-[50rem] grid-cols-2 items-start gap-10 overflow-hidden pt-10 md:max-h-[40rem] md:pt-20">
-        <div className="px-4 py-10 md:px-8 md:py-10 lg:col-span-2">
+      <div className="mx-auto items-start gap-10 overflow-hidden pt-10">
+        <div className="px-4 py-10">
           <RoughNotationGroup show={isInView}>
             <h2
               className={cn(
@@ -36,7 +36,7 @@ export function PlayfulHeroSection() {
               </RoughNotation>{" "}
               required
             </h2>
-            <p className="mt-4 max-w-4xl text-center text-sm text-neutral-500 sm:text-left md:mt-10 md:text-lg dark:text-neutral-400">
+            <p className="mt-4 max-w-4xl text-center text-xs text-neutral-500 sm:text-left md:mt-10 md:text-lg dark:text-neutral-400">
               I strongly believe, not only big companies who can release from{" "}
               <RoughNotation
                 type="underline"
